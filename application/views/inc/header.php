@@ -9,7 +9,7 @@
 <body>
 	<div id="wrapper">
 		<div id="header">
-			<div class="mail"><a href="mailto:name@yourwebsite.com">name@yourwebsite.com</a></div>
+			<!--<div class="mail"><a href="mailto:name@yourwebsite.com">name@yourwebsite.com</a></div>-->
 			<div class="row">
 				<ul id="nav">
 					<li class="active"><a href="<?php echo site_url('');?>">home</a></li>
