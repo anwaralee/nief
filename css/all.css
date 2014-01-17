@@ -78,7 +78,7 @@ a:hover{text-decoration:underline;}
 	text-decoration:none;
 	color:#090909;
 }
-/*header end*/
+/*header end#F4F4F4*/
 /*promo start*/
 .promo{
 	position:relative;
@@ -91,19 +91,19 @@ a:hover{text-decoration:underline;}
 .promo .view{
 	position:absolute;
 	background:#090909;
-	width:422px;
+	width:287px;
 	text-transform:uppercase;
 	font:bold 15px/44px Arial, Helvetica, sans-serif;
 	color:#999898;
-	top:290px;
-	left:35px;
+	bottom:18px;
+	left:0;
 	padding:0 8px 0 13px;
 	overflow:hidden;
 }
 .promo .view a{
 	float:right;
 	background:url(../images/arrow-orange.gif) no-repeat 100% 19px;
-	padding-right:16px;
+	padding-right:81px;
 }
 /*promo end*/
 /*main start*/

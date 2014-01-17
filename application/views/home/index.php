@@ -1,7 +1,7 @@
 <?php $this->load->view('inc/header');?>
 		<div class="promo">
 			<img src="<?php echo site_url('images/img01.jpg');?>" alt="" />
-			<div class="view"><a href="#">view portfolio</a> <span>Here’s some nice work</span></div><!--view-->
+			<div class="view"><a href="#">view portfolio</a></div><!--view-->
 		</div><!--promo-->
 		<div id="main">
 			<div class="three-cols">
