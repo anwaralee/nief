@@ -43,5 +43,7 @@ $route['404_override'] = '';
 $route['about'] = 'home/about';
 $route['missions'] = 'home/missions';
 $route['contact'] = 'home/contact';
-/* End of file routes.php */
+$route['admin'] = 'admin/login';
+/*$route['contact_verify'] = 'home/contact_verify';
+ End of file routes.php */
 /* Location: ./application/config/routes.php */
