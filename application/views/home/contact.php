@@ -13,11 +13,13 @@ else
 ?>
 <h1 class="heading"><?php echo $heading; ?></h1>
 <p><?php echo $content; ?></p>
-<h2>Contact Us</h2>
+<div class="contact">
+
 <form action="<?php echo site_url('home/contact_verify');?>" method="post" id="contact">
-<label>Full Name : <input type="text" name="fullname" class="required" /></label><br />
-<label>Email : <input type="text" name="email" class="required" /> </label><br />
-<label>Message : <textarea name="message" class="required"></textarea></label><br />
-<input type="submit" value="Send" name="submit"/> 
+<div class="listing"><div class="label">Full Name</div><div class="fields"><input type="text" name="fullname" class="required" /></div><div class="clear"></div></div>
+<div class="listing"><div class="label">Email</div><div class="fields"><input type="text" name="email" class="required" /></div><div class="clear"></div></div>
+<div class="listing"><div class="label">Message</div><div class="fields"><textarea name="message" class="required"></textarea></div><div class="clear"></div></div>
+<input type="submit" value="Send" name="submit" class="btn"/> 
 </form> 
+</div>
 <?php $this->load->view('inc/footer');?>
