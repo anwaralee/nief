@@ -11,14 +11,20 @@
             $this->load->model('admin_model');   
         }
         
-        function login()
+        function index()
         {
             $this->load->view('admin/login_view');
         }
         
         function login_verify()
         {
-           $this->load->admin_model('login_verify'); 
+           $q = $this->admin_model->login_verify();
+           if($q)
+           {
+            redirect('admin/dashboard');
+           } 
+           else
+           redirect('admin');
         }
     }
 ?>

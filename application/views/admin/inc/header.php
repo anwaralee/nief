@@ -8,3 +8,11 @@
 </head>
 <body>
 <h1>Admin Panel</h1>
+<?php if($this->session->flashdata('flash'))
+{
+    ?>
+<div class="flash">
+<?php echo $this->session->flashdata('flash');?>
+</div>
+<?php 
+}?>

@@ -45,11 +45,11 @@
           $this->email->message($msg);
           if($this->email->send())
          {
-          $this->session->set_flashdata('email','Your email has been sent!');
+          $this->session->set_flashdata('flash','Your email has been sent!');
          }
          else
         {
-          $this->session->set_flashdata('email','Sorry there occured an error sending your email!');
+          $this->session->set_flashdata('flash','Sorry there occured an error sending your email!');
         }
           
         }

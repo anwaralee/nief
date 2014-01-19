@@ -29,3 +29,11 @@
 				<h1 class="logo"><a href="<?php echo site_url('');?>">Creative Freelancer</a></h1>
 			</div>
 		</div><!--header-->
+        <?php if($this->session->flashdata('flash'))
+{
+    ?>
+<div class="flash">
+<?php echo $this->session->flashdata('flash');?>
+</div>
+<?php 
+}?>
