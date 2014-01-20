@@ -15,7 +15,20 @@
 </script>
 </head>
 <body>
-
+<div class="header">
+<div class="headerin">
+<ul class="left nav">
+    <li class="active"><a href="<?php echo site_url('pages');?>">Pages</a></li>
+    <li><a href="<?php echo site_url('account');?>">Setting</a></li>
+    <li><a href="">Portfolio</a></li>
+    <li><a href="<?php echo site_url('logout')?>">Logout</a></li>
+    <li><a href=""></a></li>
+</ul>
+<div class="right admintop"><strong>NIEF ADMIN PANEL</strong></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="content">
 <?php if($this->session->flashdata('flash'))
 {
     ?>

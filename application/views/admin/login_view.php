@@ -18,8 +18,8 @@
 <?php 
 }?>
 <form action="<?php echo site_url('admin/login/login_verify'); ?>" method="post">
-<div class="listing">Username<br /><input type="text" name="name" /></div>
-<div class="listing">Password <br /><input type="password" name="pass" /></div>
+<div class="listings">Username<br /><input type="text" name="name" /></div>
+<div class="listings">Password <br /><input type="password" name="pass" /></div>
 <input type="submit" value="Login" class="btn"/>
 </form>
 </div>

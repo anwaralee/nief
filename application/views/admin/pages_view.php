@@ -1,15 +1,18 @@
 <?php
     $this->load->view('admin/inc/header');
     $this->load->view('admin/inc/menu');
+    ?>
+    <h1>Page Manager</h1>
+    <?php
     if($pages)
     {
         ?>
-        <table>
-        <tr><td>Page Title </td><td> | </td><td> Action</td></tr> 
+        <table class="listingtab">
+        <tr><th class="listlabel" width="70%">Page Title </th><th> Action</th></tr> 
         <?php
         foreach($pages as $p)
         {
-            echo '<tr><td>'.$p['title'].'<td> | </td><td><a href="'.site_url('admin/dashboard/edit_page/'.$p['id']).'">Edit</a></td></tr>';
+            echo '<tr><td>'.$p['title'].'<td><a href="'.site_url('admin/dashboard/edit_page/'.$p['id']).'" class="btn">Edit</a></td></tr>';
         }
         ?>
         </table>
