@@ -6,7 +6,7 @@
             parent::__construct();
             if($this->session->userdata('admin'))
             {
-                
+                redirect('dashboard'); 
             }
             $this->load->model('admin_model');   
         }
@@ -21,10 +21,13 @@
            $q = $this->admin_model->login_verify();
            if($q)
            {
-            redirect('admin/dashboard');
+            redirect('dashboard');
            } 
            else
            redirect('admin');
         }
+        
+        
+        
     }
 ?>

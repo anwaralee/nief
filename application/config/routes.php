@@ -44,6 +44,11 @@ $route['about'] = 'home/about';
 $route['missions'] = 'home/missions';
 $route['contact'] = 'home/contact';
 $route['admin'] = 'admin/login';
-/*$route['contact_verify'] = 'home/contact_verify';
+$route['dashboard']='admin/dashboard';
+$route['pages'] = 'admin/dashboard/pages';
+$route['logout'] = 'admin/dashboard/logout';
+$route['account'] = 'admin/dashboard/account';
+$route['edit_account'] = 'admin/dashboard/edit_account';
+/*$route['edit_page/any:'] = 'admin/dashboard/edit_page/$1';$route['contact_verify'] = 'home/contact_verify';
  End of file routes.php */
 /* Location: ./application/config/routes.php */
