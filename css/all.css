@@ -83,8 +83,10 @@ a:hover{text-decoration:underline;}
 }
 /*header end#F4F4F4*/
 /*promo start*/
-.contact{margin-top:10px;font-size:15px;}
-.listing{width:400px;padding:10px;}
+.contact{margin-top:10px;font-size:15px;float:left;}
+.contact textarea{height:150px;}
+.map{float: right;width:425px;margin-left:20px;}
+.listing{width:400px;padding:15px;}
 .label{width:150px;float: left;}
 .fields{width:250px;float: right;}
 .clear{clear:both;}
