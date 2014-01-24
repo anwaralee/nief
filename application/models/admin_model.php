@@ -72,5 +72,37 @@
             $this->session->set_flashdata('flash', 'Account details updated successfully');
             return true;
         }
+        
+        function getPortfolio()
+        {
+            $q = $this->db->get('tbl_portfolio');
+            if($q->num_rows()>0)
+            {
+                return $q->result_array();
+            }
+            else return null;
+        }
+        
+        function add_port_verify()
+        {
+            $date = date('Y:m:d');
+            $t = $this->input->post('title');
+            $d = $this->input->post('description');
+            $f = $_FILES['image']['name']; 
+            $arr = explode('.',$f);
+            $ext = end($arr);
+            $rand = rand(1000000,9999999).'_'.rand(1000000,9999999).'.'.$ext;
+            move_uploaded_file($_FILES['image']['tmp_name'],BASEPATH.'../images/portfolio/original/'.$rand);
+            die('here');
+        }
+        function upload_port_verify()
+        {            
+            $f = $_FILES['image']['name']; 
+            $arr = explode('.',$f);
+            $ext = end($arr);
+            $rand = rand(1000000,9999999).'_'.rand(1000000,9999999).'.'.$ext;
+            move_uploaded_file($_FILES['image']['tmp_name'],BASEPATH.'../images/portfolio/original/'.$rand);
+            echo $rand;
+        }
     }
 ?>

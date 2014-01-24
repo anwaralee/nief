@@ -140,5 +140,113 @@
             $this->admin_model->edit_account();
             redirect('account');
         }
+        
+        function portfolio()
+        {
+            $data['port']=$this->admin_model->getPortfolio();
+            $this->load->view('admin/portfolio_view',$data);
+        }
+        
+        function add_port()
+        {
+             $data['ckeditor'] = array(
+ 
+			//ID of the textarea that will be replaced
+			'id' 	=> 	'content',
+			'path'	=>	'js/ckeditor',
+ 
+			//Optionnal values
+			'config' => array(
+				'width' 	=> 	"550px",	//Setting a custom width
+				'height' 	=> 	'100px',	//Setting a custom height
+				'toolbar' 	=> 	array(	//Setting a custom toolbar
+					array('Bold', 'Italic'),
+					array('Underline', 'Strike', 'FontSize','NumberedList'),
+					array('Smiley'),
+					'/'
+				)
+			),
+ 
+ 
+			//Replacing styles from the "Styles tool"
+			'styles' => array(
+ 
+				//Creating a new style named "style 1"
+				'style 1' => array (
+					'name' 		=> 	'Blue Title',
+					'element' 	=> 	'h2',
+					'styles' => array(
+						'color' 	=> 	'Blue',
+						'font-weight' 	=> 	'bold'
+					)
+				),
+ 
+				//Creating a new style named "style 2"
+				'style 2' => array (
+					'name' 	=> 	'Red Title',
+					'element' 	=> 	'h2',
+					'styles' => array(
+						'color' 		=> 	'Red',
+						'font-weight' 		=> 	'bold',
+						'text-decoration'	=> 	'underline'
+					)
+				)				
+			)
+		);
+        $data['ckeditor2'] = array(
+ 
+			//ID of the textarea that will be replaced
+			'id' 	=> 	'content2',
+			'path'	=>	'js/ckeditor',
+ 
+			//Optionnal values
+			'config' => array(
+				'width' 	=> 	"550px",	//Setting a custom width
+				'height' 	=> 	'100px',	//Setting a custom height
+				'toolbar' 	=> 	array(	//Setting a custom toolbar
+					array('Bold', 'Italic'),
+					array('Underline', 'Strike', 'FontSize','NumberedList'),
+					array('Smiley'),
+					'/'
+				)
+			),
+ 
+ 
+			//Replacing styles from the "Styles tool"
+			'styles' => array(
+ 
+				//Creating a new style named "style 1"
+				'style 1' => array (
+					'name' 		=> 	'Blue Title',
+					'element' 	=> 	'h2',
+					'styles' => array(
+						'color' 	=> 	'Blue',
+						'font-weight' 	=> 	'bold'
+					)
+				),
+ 
+				//Creating a new style named "style 2"
+				'style 2' => array (
+					'name' 	=> 	'Red Title',
+					'element' 	=> 	'h2',
+					'styles' => array(
+						'color' 		=> 	'Red',
+						'font-weight' 		=> 	'bold',
+						'text-decoration'	=> 	'underline'
+					)
+				)				
+			)
+		);
+            $this->load->view('admin/add_port_view',$data);
+        }
+        
+        function add_port_verify()
+        {
+            $this->admin_model->add_port_verify();
+        }
+        function upload_port()
+        {
+            $this->admin_model->upload_port_verify();
+        }
     } 
 ?>

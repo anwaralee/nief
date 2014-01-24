@@ -1,6 +1,5 @@
 <?php
 $this->load->view('admin/inc/header');
-$this->load->view('admin/inc/menu');
 ?>
 <h1>Page Manager > Edit Page</h1>
 

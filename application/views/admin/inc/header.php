@@ -8,6 +8,7 @@
      <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
     <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+    <script src="<?php echo site_url('js/upload.js');?>"></script>
     <script language='javascript'>
   $(document).ready(function(){
     $(".edit").validate();
@@ -23,7 +24,7 @@
 <ul class="left nav">
     <li class="active"><a href="<?php echo site_url('pages');?>">Pages</a></li>
     <li><a href="<?php echo site_url('account');?>">Setting</a></li>
-    <li><a href="">Portfolio</a></li>
+    <li><a href="<?php echo site_url('admin/dashboard/portfolio');?>">Portfolio</a></li>
     <li><a href="<?php echo site_url('logout')?>">Logout</a></li>
     <li><a href=""></a></li>
 </ul>
